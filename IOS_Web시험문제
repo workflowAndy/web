@@ -1,0 +1,591 @@
+IOS
+
+1) What is the usage of the Omitting Argument Labels ( _ ). 
+
+2) What is Mutable and Immutable 
+
+3) what is different between array dictionary and SET 
+
+4) What is Properties and Extension 
+
+5) What is struct and how to write sample code for struct Extension and Properties 
+
+
+
+
+
+-------------
+** 찾아봐라 로 검색해서 답을 만든다.
+
+Web
+
+The best way to develop and maintain a large program is to construct it from small, simple pieces called __modules____.
+
+a) scripts
+
+     b) modules
+
+c) scriptlets
+
+d) objects
+
+
+The technique of developing and maintaining a large program by constructing it from small, 
+ simple pieces is called _divide and conquer_____.
+
+       a) divide and conquer
+
+b) modular programming
+
+c) multitasking
+
+d) multiprogramming
+
+
+
+When the user clicks a hyperlink, a __URL__locates the requested web page and sends it to the user’s web browser.
+
+      a) URL
+
+b) web server
+
+c) host
+
+d) packet
+
+
+
+
+All variables declared in function definitions are ___global variable_____.
+
+      a) global variables
+
+b) local variables
+
+c) static variables
+
+d) constant variables
+
+
+
+
+A function’s __parameters____ are also considered to be local variables.
+
+      a) parameters
+
+b) static variables
+
+c) register variabless
+
+d) constant variables
+
+
+The _____date___ input type enables the user to enter a date in the format yyyy-mm-dd.
+
+	a) date
+
+b) datetime-local
+
+c) datetime
+
+d) datetime-utc
+
+
+
+__CSS______ allow you to specify the style of your page elements (spacing, margins, etc.) separately from the structure of your document.
+
+a) Filters
+
+b) Style declarations
+
+		c) Cascading Style Sheets
+
+d) Text flows
+
+*** 찾아봐란
+Nested in the audio element are two ___preload attributes_____ specifying the locations of the audio clip in MP3 and OGG formats, respectively.
+
+a) source elements
+
+b) media elements
+
+		c) preload attributes
+
+d) location elements
+
+
+
+Change an image’s ____src____ attribute to change which picture it displays.
+
+a) location
+
+b) URL
+
+		c) src
+
+d) source
+
+
+** 찾아봐라
+
+An example of the proper format for inline styles is: 
+
+a) <p style = “font-size = 20pt”>
+
+b) <p font-style = “20pt”>
+
+c) <p style: “font-size = 20pt”>
+
+		d) <p style = “font-size: 20pt”> ==> it is correct
+
+
+
+Which of the following selections is the proper way to apply this CSS rule:
+
+.blue { color: blue } ==> <p class = "blue">
+
+a) <p color = "blue">
+
+		b) <p class = "blue">
+
+c) <p color = .blue>
+
+d) <p class = .blue>
+
+
+
+A function that calls itself either directly or indirectly through another function is called a _recursive__function.
+
+a) base case
+
+b) iterative
+
+		c) recursive
+
+d) Fibonacci
+
+
+
+When a function invokes a new copy of itself, it is called a __recursive call______.
+
+a) base case
+
+b) final step
+
+c) base case
+
+		d) recursive call
+
+
+**찾아봐라
+Iteration uses ___repetition_____ statements and recursion uses ___selection_____ statements.
+
+a) counter-recursive, counter-iterative
+
+b) repetition, function calling
+
+		c) repetition, selection
+
+d) function-calling, repetition
+
+
+
+When does a recursive program go into infinite recursion? 
+
+a) if the loop-continuation test never becomes false
+
+b) if the recursion test never becomes false
+
+c) if the loop-continuation test never becomes true
+
+		d) if the recursion step does not converge on the base case ==> it is correct
+
+
+
+7. Which of the following is an example of an inline element? span is inline
+
+		a) span
+
+b) img
+
+c) em
+
+d) All of the above
+
+
+
+
+8. The _margin______ property specifies the distance from other page elements.
+
+a) padding
+
+b) border
+
+		c) margin
+
+d) float
+
+
+The __Padding______ is the distance between the content inside an element and the inside of its border.
+
+		a) padding
+
+b) border
+
+c) margin
+
+d) float
+
+
+**  찾아봐라.
+Specifying the order in which programming statements are to be executed is called ___program control_____.
+
+		a) program control 
+
+b) a program structure
+
+c) a control structure
+
+d) an algorithm
+
+
+
+_Pseudocode_______ is an informal language that helps programmers develop algorithms.
+
+a) JavaScript
+
+b) ECMAScript
+
+		c) Pseudocode
+
+d) AlgorithmCode
+
+
+** 찾아봐라
+A program in which all statements are executed one after the other in the order 
+in which they are written exhibits _sequential execution_______.
+
+a) transfer of control
+
+b) algorithms
+
+		c) sequential execution
+	
+d) direct execution
+
+
+** 찾아봐라
+The word sequence in the term sequence structure refers to the sequence of __JavaScript instructions in a script______.
+
+a) bits in a JavaScript instruction 
+	b) JavaScript instructions in a script 
+c) scripts in an HTML file 
+d) HTML files in a Web site
+
+
+**찾아봐라
+Which of the following is not a border property? border-shape
+
+a) border-width
+
+b) border-style
+
+		c) border-shape
+
+d) border-color
+
+
+**찾아봐라
+The __border-radius______ property adds rounded corners to any element.
+
+a) blur-radius
+
+		b) border-radius
+
+c) radial-gradient
+
+d) linear-gradient
+
+
+
+What does the following expression evaluate to?
+
+( ( 3 + ( 5 + 4 ) * 7 ) + 4 ) / 5
+ = 9 * 7 = 63 + 3 = 66 + 4 = 70 / 5 =>>> 14
+
+a) 8
+
+		b) 14
+
+c) 17.6
+
+d) 26.4
+
+
+
+Which of the following statements is correct?
+
+a) If ( studentGrade >= 60 )
+
+document.writeln( "Passed" );
+
+b) if ( studentGrade >= 60 );
+
+document.writeln( "Passed" );
+
+
+		c) if ( studentGrade >= 60 )  ==>  맞다.
+
+		document.write( "Passed" );
+
+
+d) If ( studentGrade >= 60 );
+
+document.write( "Passed" );
+
+
+
+What would the browser display if the following code were executed in a script?
+
+var x = 11;
+
+var y = 14;
+
+if ( x > 13 ) 
+  if ( y > 13 ) document.writeln( "x and y are > 13" ); 
+      else document.writeln( "x is <= 13" );
+
+		a) nothing  ==> 이것이 수행된다.
+
+b) 11
+
+c) x and y are > 13
+
+d) x is <= 13
+
+
+Which of the following will not evaluate to true?
+
+	a) false || false ==> 답이다.
+
+b) true || true
+
+c) false || true
+
+d) true || false
+
+
+
+In a switch statement, the __default______ case clause is used to process exceptional conditions and is usually listed last.
+
+a) break
+
+		b) default
+
+c) else
+
+d) then
+
+
+
+A function that calls itself either directly or indirectly through another function is called a __recursive______ function.
+
+a) base case
+
+b) iterative
+
+		c) recursive
+
+d) Fibonacci
+
+
+
+Pass-by- __value______ is the method of passing a copy of the argument's value to a function.
+
+		a) value
+
+b) parameters
+
+c) memory
+
+d) reference
+
+
+Which of the following is a JavaScript repetition statement?
+
+a) while...repeat
+
+		b) do...while  ==> 답이다.
+
+c) do...repeat
+
+d) for...do
+
+** 찾아봐라
+Which of the following is not a JavaScript keyword?
+
+a) break
+
+b) delete
+
+		c) sub  ==> this is
+
+d) for
+
+
+
+Pass-by- _reference_______ is the method of passing the argument's address in memory to a function.
+
+a) value
+
+b) parameters
+
+c) memory
+
+		d) reference
+
+
+
+Function getElementById returns a(n)___object_____.
+
+a) boolean
+
+b) string
+
+c) id attribute
+
+	d) object
+
+
+
+The __UPDATE______ SQL statement is used to change existing data in a table.
+
+a) EDIT
+
+		b) UPDATE
+
+c) CHANGE
+
+d) MODIFY
+
+
+** 돌려봐라
+
+What would the browser display if the following script were executed?
+
+<script type = "text/javascript">
+
+var count = 5;
+
+var total = 0;
+
+while ( count > -1 )
+
+{
+
+total = total - 10;
+
+count = count - 1;
+
+}
+
+document.write( total );
+
+</script>
+
+
+a) Nothing; the browser would generate an error.
+
+b) 0
+
+c) -50
+
+		d) -60  ==> this is anwer
+
+
+** 찾아봐라
+If the string passed to parseInt contains a floating-point numeric value, parseInt will ________.
+
+a) return NaN
+
+b) return 0
+
+c) round the value to the nearest tenth
+
+		d) truncate the floating-point part to be left with an integer value  ==> this is answer
+
+
+
+** 찾아봐라
+If the string passed to parseInt contains text characters, parseInt will _return NaN_______.
+
+		a) return NaN ==> this is answer
+
+b) return 0
+
+c) return the sum of the characters' ASCII values
+
+d) truncate the text entries
+
+
+
+Which of the following is the proper method to access the length of the array arr?
+
+a) arr[].length
+
+b) arr[subscript].length
+
+		c) arr.length ==> 답이다
+
+d) arr(length)
+
+
+
+The first statement below ________ the array while the second statement ________ the array.
+
+var c;
+
+c = new Array( 12 );
+
+a) declares, initializes
+
+b) initializes, declares
+
+		c) declares, allocates ==> 답이다.
+
+d) allocates, declares
+
+
+**찾아봐라
+The _border-image-source__ is the URL of the image to use in the border.
+
+		a) border-image-source
+
+b) border-image
+
+c) image-source
+
+d) image-border-source
+
+
+*찾아봐라
+The _border-image-slice__ specifies the inward offsets from the top, right, bottom and left sides of the image.
+
+a) border-image-offset
+
+b) image-slice
+
+c) border-slice
+
+		d) border-image-slice
+
+*찾아봐라
+The border-image-slice divides the image into __nine______ regions.
+
+a) four
+
+		b) nine
+
+c) two
+
+d) six
