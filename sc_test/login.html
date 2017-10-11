@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <style>
+            #content{
+                width: 450px;
+                margin: 0 auto;
+                padding: 20px 20px;
+                background:white;
+                border: 5px solid navy;
+            }
+        </style>
+    </head>
+
+    <body>
+       <div id="content">
+        <h1>Login</h1>
+        <table>
+        <form action="./login_chk.php" method="post">
+            
+            <tr><td size="50">User ID *</td><td><input type="text" name="txtUserid"></td></tr>
+            <tr><td size="50">Password *</td><td><input type="password" name="txtPassword"></td></tr>
+             <tr><td size="50"></td><td></td></tr>
+            <tr><td align="right" colspan="2"><input type="submit" name="btnSubmit" value="Login"></td></tr>
+
+        </form>
+        </table>
+
+        </div>
+
+    </body>
+</html>
