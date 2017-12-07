@@ -1,0 +1,194 @@
+<html>
+    <head>
+        <title>Check IP Page</title>
+        <style>
+            #content{
+                width: 90%;
+                margin: 0 auto;
+                padding: 20px 20px;
+                background:white;
+                border: 5px solid navy;
+            }
+        </style>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        
+        
+     $(document).ready(function () {
+        
+         $('button').click(function(){
+            
+            var sdata = $('#name').val();
+            //alert(sdata);
+            var flag = false;
+             
+               $('.test tr:first td').each(function(k, v) {
+                    $('.test tr').each(function() {
+                    var $table = $(this);
+                    var data2 =$table.find("td").eq(k).html();
+
+                     //alert(data2); 
+
+                        if ($.trim(data2) == $.trim(sdata)){
+                             flag = true;
+                             //alert("search"); 
+                        }
+                    });
+                });
+
+             if (flag){
+                 $( "#result" ).empty();
+                 $( "#result" ).append( "This data is exist" );
+             }else{
+                 $( "#result" ).empty();
+                 $( "#result" ).append( "There is no data" );
+             }
+             
+        });
+     });    
+        
+ 
+    </script>    
+        
+    </head>
+
+    <body>
+       <div id="content">
+         <h1>This is IP(Web) infomation file</h1>
+       </div>
+        
+        <div id="content">
+            <h1>serch</h1><input type="text" id = "name" name="name" value="52.26.14.11">
+            <button type="button">Find</button>
+            
+            <div id="result"></div>
+        </div>
+ 
+<?php
+
+
+
+//read file
+$myfile = fopen("list.txt", "r") or die("Unable to open file!");
+// Output one line until end-of-file
+$lastdata = "";
+
+$ipdata = array();
+$webdata = array();
+           
+           
+while(!feof($myfile)) {
+    
+    $line = fgets($myfile);
+    //echo "substring=>".substr($line,0,3)."</br>";
+    
+    $cmp =strcmp(substr($line,0,5), "https");
+    //echo "compare value=>".substr($line,0,5)."==>".$cmp."</br>";
+    
+    //http 주소임
+    if ($cmp == 0){
+        array_push($webdata,$line);
+    }else{
+        
+        if ($line.length > 1){
+            array_push($ipdata,$line);
+        }
+    }
+        
+    
+}
+fclose($myfile);
+
+//print_r("webdata: ");
+//print_r($webdata);
+//
+//print_r("ipdata: ");
+//print_r($ipdata);
+
+   echo "<div id='content'><table class='test' border='1'>";
+        $i= 0;
+        foreach ($ipdata as $ip) {
+            echo "<tr><td id='std'>".$ip."</td>";
+            echo "<td id='std'><a href='".$webdata[$i]."'>$webdata[$i]</td></tr>";
+            $i++;
+           
+        }
+   echo "</table></div>";
+           
+    
+        
+?>
+
+     
+            
+    </body>
+</html>           
+
+해당 파일을 읽어서, 화면에 표시하고, 검색하는 기능
+---------
+list.txt
+---------
+50.18.212.157
+50.18.212.223
+52.25.214.31
+52.26.11.205
+52.26.14.11
+52.8.19.58
+52.8.8.189
+54.149.153.72
+54.187.182.230	
+54.187.199.38
+54.187.208.163
+54.67.48.128
+54.67.52.245
+54.68.165.206
+54.68.183.151
+107.23.48.182
+107.23.48.232
+54.187.174.169
+54.187.205.235
+54.187.216.72
+54.241.31.99
+54.241.31.102
+54.241.34.107
+35.198.159.51		
+45.77.155.247	
+35.198.107.107		
+108.61.224.50	
+104.196.225.71	
+35.198.162.234	 	
+35.189.234.249	
+35.197.106.194
+35.198.101.151	
+35.198.175.217
+35.198.85.154	
+
+https://www.Twitter.com
+https://www.Google.com
+https://www.Youtube.com
+https://www.Linkedin.com
+https://www.Wordpress.org
+https://www.Instagram.com
+https://www.Pinterest.com
+https://www.Wikipedia.org
+https://www.Wordpress.com
+https://www.Blogspot.com
+https://www.Apple.com
+https://www.Adobe.com
+https://www.Tumblr.com
+https://www.Amazon.com
+https://www.Youtu.be
+https://www.Vimeo.com
+https://www.Goo.gl
+https://www.Microsoft.com
+https://www.Flickr.com
+https://www.Yahoo.com
+https://www.Bit.ly
+https://www.Qq.com
+https://www.Buydomains.com
+https://www.Godaddy.com
+https://www.Vk.com
+https://www.Reddit.com
+
+
